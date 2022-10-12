@@ -1,0 +1,33 @@
+body {
+   height: 100vh;  
+   /* i dont have any scrolling thats
+   why i dont have to worry anout min-height*/
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0;
+   background-color: black;
+
+}
+
+#game-board {
+    background-color: antiquewhite;
+    width: 100vmin; /*this way i make sure
+    i always have a square*/
+    height: 100vmin;
+    display: grid;
+    grid-template-rows: repeat(21,1fr);
+    grid-template-columns: repeat(21,1fr);
+}
+
+
+
+.snake {
+    background-color: green;
+}
+
+.food {
+    background-color: red;
+    border-radius: 50%;
+}
